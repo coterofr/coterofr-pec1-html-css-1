@@ -1,0 +1,34 @@
+{
+  "name": "coterofr-pec-1",
+  "version": "1.0.0",
+  "description": "Carlos Otero Franjo - PEC 1 Herramientas HTML y CSS UOC",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 4 versions, Firefox ESR",
+  "scripts": {
+    "parcel:dev": "parcel src/index.html --open",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "prefix": "postcss ./src/css/styles.css --use autoprefixer -d ./src/assets/css/prefix/",
+    "test": "echo 'Everything is working, deploy your project running npm run dev'"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Carlos Otero Franjo",
+    "email": "coterofr@uoc.edu"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "@parcel/transformer-sass": "^2.3.2",
+    "autoprefixer": "^10.4.2",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
+    "postcss-preset-env": "^7.4.2",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {}
+}
