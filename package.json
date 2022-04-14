@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Carlos Otero Franjo - PEC 1 Herramientas HTML y CSS UOC",
   "source": "src/index.html",
-  "browserslist": "> 0.5%, last 4 versions, Firefox ESR",
+  "browserslist": "> 0.2%, last 4 versions, not dead",
   "scripts": {
     "parcel:dev": "parcel src/index.html --open",
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "prefix": "postcss ./src/css/styles.css --use autoprefixer -d ./src/assets/css/prefix/",
-    "test": "echo 'Everything is working, deploy your project running npm run dev'"
+    "prefix": "postcss ./src/assets/css/styles.scss --use autoprefixer -d ./src/assets/css/prefix/",
+    "test": "echo 'Everything is working, deploy your project running npm run start'"
   },
   "keywords": [],
   "author": {
