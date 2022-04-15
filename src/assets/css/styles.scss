@@ -267,6 +267,11 @@
   .category-detail-img { 
     text-align: center;
     margin: 10px 10px 40px 10px;
+
+    img {
+      width: $width-img-cat-detail-sm;
+      height: $height-img-cat-detail-sm;
+    }
   }
 }
 
@@ -295,6 +300,11 @@
   .category-detail-iframe { 
     text-align: center;
     margin: 10px 10px 40px 10px;
+
+    iframe {
+      width: $width-img-cat-detail-sm;
+      height: $height-img-cat-detail-sm;
+    }
   }
 }
 
@@ -472,6 +482,7 @@
   .legacy-img {
 
     img {
+      margin-left: 15px;
       width: $width-img-list-item-lg;
       height: $height-img-list-item-lg;
     }
